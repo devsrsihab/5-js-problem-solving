@@ -4,7 +4,7 @@
 
 **Task:** Create an array of objects, each representing a person with properties like name, age, and gender. Write a function to filter out all females and then map the remaining persons to an array of names. Print the final result.
 
-### Prolem Data:
+### Problem Data:
 
 ```javascript
 const persons = [
@@ -38,11 +38,37 @@ When you call the function `getMaleNames` with an array of person objects, it wi
 
 **Task:** Create an array of objects representing books with properties like title, author, and year. Write a function that takes the array and returns a new array with only the book titles. Print the result.
 
+### Problem Data:
+
+```javascript
+const books = [
+  { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+  { title: "1984", author: "George Orwell", year: 1949 },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+  { title: "Moby Dick", author: "Herman Melville", year: 1851 },
+  { title: "War and Peace", author: "Leo Tolstoy", year: 1869 },
+];
+```
+
 ### Solution:
 
+```javascript
 const getBookTitles = (books) => {
-return books.map((book) => book.title);
+  return books.map((book) => book.title);
 };
+```
+
+## Expected Result
+
+```javascript
+[
+  "To Kill a Mockingbird",
+  "1984",
+  "The Great Gatsby",
+  "Moby Dick",
+  "War and Peace",
+];
+```
 
 ## Problem 3: Function Composition
 
@@ -50,12 +76,33 @@ return books.map((book) => book.title);
 
 ### Solution:
 
-const processNumber = (number) => {
-const squaredNumber = square(number);
-const doubledNumber = double(squaredNumber);
-const result = addFive(doubledNumber);
-return result;
+```javascript
+const square = (number) => {
+  return number * number;
 };
+const double = (number) => {
+  return number * 2;
+};
+const addFive = (number) => {
+  return number + 5;
+};
+
+const processNumber = (number) => {
+  const squaredNumber = square(number);
+  const doubledNumber = double(squaredNumber);
+  const result = addFive(doubledNumber);
+
+  return result;
+};
+
+const result = processNumber(4);
+```
+
+## Expected Result
+
+```javascript
+37;
+```
 
 ## Problem 4: Sorting Objects
 
@@ -63,20 +110,57 @@ return result;
 
 ### Solution:
 
+```javascript
 const getCarsSortedByYear = (cars) => {
-return cars.sort((a, b) => a.year - b.year);
+  return cars.sort((a, b) => a.year - b.year);
 };
+
+const sortedCars = getCarsSortedByYear(cars);
+```
+
+## Expected Result
+
+```javascript
+[
+  { make: "Chevrolet", model: "Impala", year: 2005 },
+  { make: "Honda", model: "Civic", year: 2008 },
+  { make: "Toyota", model: "Corolla", year: 2010 },
+  { make: "Ford", model: "Mustang", year: 2015 },
+  { make: "Tesla", model: "Model S", year: 2020 },
+];
+```
 
 ## Problem 5: Find and Modify
 
 **Task:** Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
 
+### Problem Data:
+
+```javascript
+const peoples = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+  { name: "Diana", age: 40 },
+];
+```
+
 ### Solution:
 
+```javascript
 const gerPersonByName = (peoples, searchName) => {
-const result = peoples.find((people) => people.name === searchName);
-if (result) {
-result.age += 1;
-}
-return result;
+  const result = peoples.find((people) => people.name === searchName);
+  if (result) {
+    result.age += 1;
+  }
+  return result;
 };
+
+const updatedPeoples = gerPersonByName(peoples, "Alice");
+```
+
+## Expected Result
+
+```javascript
+{ name: "Alice", age: 26 };
+```
