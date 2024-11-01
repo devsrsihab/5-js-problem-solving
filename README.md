@@ -4,6 +4,18 @@
 
 **Task:** Create an array of objects, each representing a person with properties like name, age, and gender. Write a function to filter out all females and then map the remaining persons to an array of names. Print the final result.
 
+### Prolem Data:
+
+```javascript
+const persons = [
+  { name: "Alice", age: 30, gender: "female" },
+  { name: "Bob", age: 25, gender: "male" },
+  { name: "Charlie", age: 35, gender: "male" },
+  { name: "Diana", age: 28, gender: "female" },
+  { name: "Evan", age: 40, gender: "male" },
+];
+```
+
 ### Solution:
 
 ```javascript
@@ -17,13 +29,7 @@ const getMaleNames = (persons) => {
 ## Expected Result
 
 ```javascript
-[
-  "To Kill a Mockingbird",
-  "1984",
-  "The Great Gatsby",
-  "Moby Dick",
-  "War and Peace",
-];
+["Bob", "Charlie", "Evan"];
 ```
 
 When you call the function `getMaleNames` with an array of person objects, it will return an array of names of males. For example:
