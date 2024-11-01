@@ -14,6 +14,20 @@ const getMaleNames = (persons) => {
 };
 ```
 
+## Expected Result
+
+```javascript
+[
+  "To Kill a Mockingbird",
+  "1984",
+  "The Great Gatsby",
+  "Moby Dick",
+  "War and Peace",
+];
+```
+
+When you call the function `getMaleNames` with an array of person objects, it will return an array of names of males. For example:
+
 ## Problem 2: Object Manipulation
 
 **Task:** Create an array of objects representing books with properties like title, author, and year. Write a function that takes the array and returns a new array with only the book titles. Print the result.

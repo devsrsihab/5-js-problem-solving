@@ -34,10 +34,6 @@ const maleNames = getMaleNames(persons);
 //the result.
 
 // Task 2 Solution: TODO:  conlution:
-// 1. make a function with taken params books
-// 2. reuturn new array with only the book titles
-// 3. print the final result
-
 const books = [
   { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
   { title: "1984", author: "George Orwell", year: 1949 },
@@ -60,19 +56,6 @@ const bookTitles = getBookTitles(books);
 //then adds 5.
 
 // Task 3 Solution: TODO:  conlution:
-// 1. make square function
-// 2. make double function
-// 3. make addFive function
-// 4. compose the functions to create a new function that squares a number,
-//    doubles the result, and then adds 5.
-// 5. print the final result
-
-// make a composed function called processNumber
-// make function addFive
-// under this function make pass args or squre function
-// under this function make pass args or double function
-// under this function make pass args or addFive function
-
 const square = (number) => {
   return number * number;
 };
