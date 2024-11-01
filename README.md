@@ -6,11 +6,13 @@
 
 ### Solution:
 
+```javascript
 const getMaleNames = (persons) => {
-return persons
-.filter((person) => person.gender !== "female")
-.map((person) => person.name);
+  return persons
+    .filter((person) => person.gender !== "female")
+    .map((person) => person.name);
 };
+```
 
 ## Problem 2: Object Manipulation
 
