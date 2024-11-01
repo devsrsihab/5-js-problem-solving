@@ -26,7 +26,7 @@ const getMaleNames = (persons) => {
 };
 ```
 
-## Expected Result
+## Result
 
 ```javascript
 ["Bob", "Charlie", "Evan"];
@@ -58,7 +58,7 @@ const getBookTitles = (books) => {
 };
 ```
 
-## Expected Result
+## Result
 
 ```javascript
 [
@@ -98,7 +98,7 @@ const processNumber = (number) => {
 const result = processNumber(4);
 ```
 
-## Expected Result
+## Result
 
 ```javascript
 37;
@@ -118,7 +118,7 @@ const getCarsSortedByYear = (cars) => {
 const sortedCars = getCarsSortedByYear(cars);
 ```
 
-## Expected Result
+## Result
 
 ```javascript
 [
@@ -159,7 +159,7 @@ const gerPersonByName = (peoples, searchName) => {
 const updatedPeoples = gerPersonByName(peoples, "Alice");
 ```
 
-## Expected Result
+## Result
 
 ```javascript
 { name: "Alice", age: 26 };
